@@ -1,0 +1,91 @@
+.card-group{
+    display: flex;
+    width: 960px;
+    flex-wrap: wrap;
+    margin: auto;  
+}
+.card{
+    width: 150px;
+    transition: background-color 0.3s;
+    margin: 3px;
+    padding: 2px;
+    width: calc(16.66% - 10px);
+}
+.card:hover{
+    background-color: rgb(249, 245, 169);
+}
+.card span{
+    color: red;
+    font-size: 13px;
+}
+.card h2{
+    font-size: 14px;
+    color: #747272;
+    margin-top:0px;
+}
+.commodity img{
+    margin: 5px ;
+    display: block;
+    width: 93%;
+}
+.information{
+    display: flex;
+}
+.price{
+    font-size: 30px;
+    color: red;
+    margin: 0px;
+}
+.price span{
+    font-size: 10px;
+}
+.price span:last-child{
+    color: #747272;
+}
+.evaluate{
+    display: flex;
+    width: 18px;
+    margin: 0px;
+}
+.evaluate img:first-child{
+    margin: 0px;
+}
+.evaluate p{
+    font-size: 12px;
+    color: #aaa9a9;
+    margin: 2px;
+}
+.icon{
+    border-radius: 3px;
+    background-color: #e0dede;
+    display: flex;
+    justify-content:flex-end;
+    height: 20px;
+    padding: 2px;
+}
+/* .icon img:first-child{
+    margin: 0px;
+} */
+.icon .sales{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.icon .sales p{
+    color: #7a7a7a;
+    font-size: 10px;
+    margin: 37px ;
+}
+.sales{
+    display: flex;
+}
+.sales-volume{
+    color: #747272;
+    font-size: 13px;
+    margin: 5px;
+}
+.line{
+    width:100%;
+    margin: 20px 0px;
+    border-bottom:rgb(134, 134, 134) 1px dashed;
+}
