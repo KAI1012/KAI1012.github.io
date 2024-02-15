@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>填寫資料</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.3.5/air-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test03.css">
+</head>
+
+<body>
+    <div class="state">
+        <div class="checkout-nav">
+            <div class="step ">
+                <span class="badge a">✅</span>
+                <span class="step-text">選擇方案</span>
+            </div>
+            <div class="step">
+                <span class="badge b">....</span>
+                <span class="step-text">填寫資料</span>
+            </div>
+            <div class="step">
+                <span class="badge c">....</span>
+                <span class="step-text">完成付款</span>
+            </div>
+        </div>
+    </div>
+    <div class="Confirm-Order">
+        <div class="date">
+            <h2><b>填寫資料</b></h2>
+            <hr>
+            <div class="Booking-information">
+                <h3><b>預訂資料</b></h3>
+                <div class="Booking-card">
+                    <img src="/Klook/img/pwbxqrmqpxfdqjdpypya.webp" alt="">
+                    <div class="text">
+                        <h5><b>Starbucks 星巴克</b></h5>
+                        <span>星巴克大杯那堤(兌換冰熱任選)</span>
+                    </div>
+                </div>
+
+                <div class="data">
+                    <span>預計參加日期</span>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        ¡
+                    </button>
+                    <div class="modal fade modal-dialog modal-dialog-centered" id="staticBackdrop"
+                        data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p class="title">所選日期僅供參考，有效期內皆可參加活動</p>
+                                    <p class="date-day"><b>兌換期</b></p>
+                                    <p class="text">憑證於預訂所選日前皆可兌換</p>
+                                </div>
+                                <button type="button" class="btn btn-secondary OK" data-bs-dismiss="modal">知道了</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-data d-flex ">
+                        <p>日期</p>
+                        <p class="icon"> *</p>
+                    </div>
+                    <input id="myDatepicker">
+
+                </div>
+            </div>
+
+            <div class="Contact-information">
+                <h3><b>聯絡資料</b></h3>
+                <p class="text">如訂單有變動，我們將通知您</p>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary Add-date" data-bs-toggle="modal"
+                    data-bs-target="#Add-new-information">
+                    + 新增
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Add-new-information" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="Add-close" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title " id="Add-close">新增聯絡資料</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="Name">
+                                    <div class="first-name">
+                                        <p>姓氏 <span>*</span></p>
+                                        <input type="text" placeholder="例 : Wang">
+                                    </div>
+                                    <div class="list-name">
+                                        <p>名子 <span>*</span></p>
+                                        <input type="text" placeholder="例 : Da Min">
+                                    </div>
+                                </div>
+                                <div class="country">
+                                    <p>國家/地區 <span>*</span></p>
+                                    <div class="dropdown-center">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            請選擇
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <p>常用</p>
+                                            <li><a class="dropdown-item" href="#">台灣</a></li>
+                                            <li><a class="dropdown-item" href="#">香港</a></li>
+                                            <li><a class="dropdown-item" href="#">中國</a></li>
+                                            <li><a class="dropdown-item" href="#">新加坡
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">泰國</a></li>
+                                            <li><a class="dropdown-item" href="#">韓國</a></li>
+                                            <li><a class="dropdown-item" href="#">澳門</a></li>
+                                            <li><a class="dropdown-item" href="#">馬來西亞</a></li>
+                                            <li><a class="dropdown-item" href="#">澳洲</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="phone-num">
+                                    <p>手機號碼<span> *</span></p>
+                                    <div class="phone-num-input d-flex">
+                                        <div class="dropdown-center">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                請輸入
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <p>常用</p>
+                                                <li><a class="dropdown-item" href="#">台灣(+886)</a></li>
+                                                <li><a class="dropdown-item" href="#">香港(+852)</a></li>
+                                                <li><a class="dropdown-item" href="#">中國(+86)</a></li>
+                                                <li><a class="dropdown-item" href="#">新加坡(+65)
+                                                    </a></li>
+                                                <li><a class="dropdown-item" href="#">泰國(+66)</a></li>
+                                                <li><a class="dropdown-item" href="#">韓國(+82)</a></li>
+                                                <li><a class="dropdown-item" href="#">澳門(+853)</a></li>
+                                                <li><a class="dropdown-item" href="#">馬來西亞(+60)</a></li>
+                                                <li><a class="dropdown-item" href="#">澳洲(+61)</a></li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" placeholder="請輸入">
+                                    </div>
+                                </div>
+
+                                <div class="email">
+                                    <p>電子信箱（接收訂單最新資訊） <span>*</span></p>
+                                    <input type="text" placeholder="請輸入">
+                                </div>
+                                <p class="message">我了解本人提供之個人資料，僅用於預訂實名制之旅遊及休閒娛樂活動商品，亦了解 Klook
+                                    將透過加密等方式保護該資料，且僅於實際交易時授權提供相關第三方使用</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary canale"
+                                    data-bs-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary store">儲存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-shows-that">
+                    <div class="data-show-title">
+                        <p>姓氏</p>
+                        <p>名子</p>
+                        <p>國家/地區</p>
+                        <p>手機號碼</p>
+                        <p>電子信箱（接收訂單最新資訊）</p>
+                    </div>
+                    <div class="data-show-text">
+                        <p>請填寫</p>
+                        <p>請填寫</p>
+                        <p>請選擇</p>
+                        <p>請填寫</p>
+                        <p>請填寫</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="upgrade">
+                <h3><b>升級</b></h3>
+            </div>
+
+            <div class="discount">
+                <h3><b>優惠折扣</b></h3>
+                <div class="discount-content">
+                    <div class="interval">
+                        <p>平台優惠碼</p>
+                        <p>不適用</p>
+                    </div>
+                    <div class="interval">
+                        <p>付款優惠</p>
+                        <p>不適用</p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    此訂單無適用優惠碼
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>
+                                        <input type="text" placeholder="輸入優惠碼">
+                                        <button>使用</button>
+                                    </strong> 
+                                    <div class="Suitable">
+                                        <button>適用(0)</button>
+                                        <button>不適用(0)</button>
+                                        <hr>
+                                        <p>暫無優惠碼</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="terms">我了解並同意Klook服務條款與隱私權政策</p>
+            <hr>
+            <div class="Confirm-notification">
+                請確認資料填寫無誤，訂單送出後可能無法更改
+            </div>
+            <div class="Go-to-payment">
+                <p>前往付款後，訂單即送出，請於下一步選擇付款方式</p>
+                <button>前往付款</button>
+            </div>
+        </div>
+        <div class="price-detail">
+            <div class="price">
+                <p>價格</p>
+                <p>NT$135</p>
+            </div>
+            <div class="price-total">
+                <p>付款金額</p>
+                <p class="total"><b>NT$135</b></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.3.5/air-datepicker.min.js"></script>
+    <script>
+        // Call Air datepicker function
+        new AirDatepicker('#myDatepicker');
+    </script>
+</body>
+
+</html>

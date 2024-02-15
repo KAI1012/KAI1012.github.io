@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.shopcar-block {
+    margin: 3em auto;
+    width: 80%;
+}
+
+.select-block {
+    margin-right: 2%;
+    flex-grow: 1;
+}
+
+.select-del {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.alert {
+    padding: 1em 2em;
+}
+
+.total-block {
+    margin-top: 1em;
+    width: 20%;
+    padding: 15px;
+    border: 1px solid none;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+#flexCheckDefault:checked,
+#flexCheckDefaultItem:checked {
+    background-color: #E05000;
+    border-color: #E05000;
+    -webkit-box-show: none;
+    box-shadow: none;
+}
+
+#flexCheckDefault:hover,
+#flexCheckDefaultItem:hover {
+    border-color: #E05000;
+}
+
+#flexCheckDefault:focus,
+#flexCheckDefaultItem:focus {
+    -webkit-box-show: none;
+    box-shadow: none;
+}
+
+.btn-danger {
+    background-color: #E05000;
+    width: 100%;
+}
+
+.btn-danger:hover {
+    background-color: #be4503;
+}
+
+.del-button {
+    padding: 0 2.5em;
+}
+
+.btn-secondary {
+    background-color: #F5F5F5;
+    color: #555555;
+    border-color: #F5F5F5;
+}
+
+.btn-secondary:hover {
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity p {
+    margin: 0;
+    padding: 0 0.5em;
+}
+
+.btn-secondary,
+.quantity button {
+    height: 2em;
+}
+
+
+
+.recommend{
+    width: 80%;
+    margin: auto;
+}
+
+.recommend{
+    position: relative;
+}
+
+.recommend-title span::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 1em;
+    background-color: #FF5B00;
+    border-radius: 10px;
+    top: 4px;
+    left: -3px;
+}
+.recommend-title span{
+    margin: 10px;
+    font-size: 25px;
+}
+.recommend-card-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.recommend-card{
+    width: 24%;
+    margin: 6px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    background-color:#FFFFFF ;
+    border-radius: 5%;
+}
+.product-name{
+    font-size: 20px;
+}
+.recommend-card img{
+    width: 100%;
+}
+
+.recommend-card .star{
+    width: 8%;
+}
+.Fraction{
+    color: #FF9C00;
+}
+.evaluate{
+    display: flex;
+}
+.price{
+    margin: 2em 0 5px 0;
+    font-size: 16px;
+}
+.original-price{
+    color: #555555;
+    text-decoration: line-through black;
+    margin-left: 5px;
+}
+
+
+
+
+
+/* Responsive Web Design (RWD) */
+@media (max-width: 768px) {
+    .shopcar-block {
+        width: 90%;
+    }
+    .store{
+        font-size: 20px;
+    }
+    #flexCheckDefaultItem{
+        margin: 15px 7px  ;
+    }
+    .button-group{
+        display: flex;
+    }
+    .select-block,
+    .total-block {
+        width: 100%;
+        margin-right: 0;
+    }
+    .recommend-card{
+        width: 90%;
+    }
+    .evaluate{
+        font-size: 10px;
+    }
+    .evaluate .star{
+        width: 5%;
+    }
+    .product-name{
+        font-size: 14px;
+    }
+    .area{
+        font-size: 10px;
+    }
+
+    .bg-white.rounded-4.p-3 {
+        padding: 1.5em; /* 增加內間距 */
+        border-radius: 10px; /* 圓角 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+    }
+
+    .form-check-input {
+        width: 20px;
+        height: 20px;
+        margin: right 0.5em;;
+    }
+
+    .quantity {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quantity button {
+        margin-top: 0.5em;
+        font-size: 14px; /* 調整按鈕文字大小 */
+    }
+
+    .total-block {
+        width: 100%;
+        margin-top: 1.5em; /* 增加上部外間距 */
+        text-align: center;
+    }
+
+    .total-block button {
+        margin-top: 0.8em;
+        font-size: 16px; /* 調整按鈕文字大小 */
+    }
+}
+
+@media (min-width: 768px)  {
+    .shopcar-block {
+        width: 80%;
+    }
+    .recommend-card{
+        width: 48%;
+    }
+    .Checklist{
+        display: block;
+    }
+    .total-block{
+        width: 100%;
+    }
+    .button-group{
+        display: flex;
+    }
+    .quantity{
+        margin:500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .shopcar-block {
+        width: 80%;
+    }
+    .recommend-card{
+        width: 24%;
+    }
+    .Checklist{
+        width: 75%;
+    }
+    .total-block{
+        width: 20%;
+        margin: 0 3%;
+    }
+    .order{
+        display: flex;
+    }
+    .detail{
+        
+    }
+}
+
+
+
+
+
+
+

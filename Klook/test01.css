@@ -1,0 +1,174 @@
+/* 全域設定 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Shopcar 區塊 */
+.Shopcar {
+    background-color: #F5F5F5;
+    padding: 20px;
+}
+
+/* shopcardcontent 區塊 */
+.shopcardcontent {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shopcardcontent img {
+    width: 100%;
+    max-width: 280px;
+}
+
+.shopcar-Text {
+    width: 100%;
+    max-width: 380px;
+    margin: auto;
+}
+
+/* popular 區塊 */
+.popular {
+    width: 90%;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+    margin: auto;
+}
+
+.popular-title span {
+    margin-left: 0;
+}
+
+.popular-title span::before {
+    /* left: 0; */
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 1em;
+    background-color: #FF5B00;
+    border-radius: 10px;
+    top: 4px;
+    left: -3px;
+}
+
+/* popular-card-content 區塊 */
+.popular-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+/* popular-card 元素 */
+.popular-card {
+    width: 48%;
+    margin: 8px auto;
+}
+
+.popular-card img {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 5%;
+}
+
+.popular-card a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+.popular-card span {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 15px;
+}
+
+/* more 區塊 */
+.more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more button {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #FF5B00;
+    background-color: white;
+    border: 1px #FF5B00 double;
+    padding: 8px;
+    font-size: 12px;
+}
+.more :hover{
+    background-color: #FF5B00;
+    color: white;
+}
+
+/* 媒體查詢 - 平板和大型螢幕 */
+@media (min-width: 768px) {
+    .popular-card {
+        width: 30%;
+        margin: 5px auto;
+    }
+
+    .more button {
+        max-width: 200px;
+    }
+
+    .popular-card a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        position: relative;
+    }
+    
+    .popular-card span {
+        position: absolute;
+        z-index: 1;
+        top: 45px;
+        left: 20px;
+    }
+}
+
+/* 媒體查詢 - 大型螢幕 */
+@media (min-width: 1200px) {
+    .popular-card {
+        width: 22%;
+        margin: 15px 15px;
+    }
+
+    .popular-title span{
+        font-size: 25px;
+    }
+
+    .more button {
+        max-width: 150px;
+    }
+
+    .popular-card a {
+        text-decoration: none;
+        color: white;
+        font-size: 28px;
+        position: relative;
+        width: 100%;
+    }
+    
+    .popular-card span {
+        position: absolute;
+        z-index: 1;
+        top: 2.5em;
+        left: 1em;
+    }
+
+    .popular{
+        width: 75%;
+    }
+    
+    .popular-card-content{
+        display: flex;
+    }
+}

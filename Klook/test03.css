@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Confirm-Order{
+    background-color: #F5F5F5;
+    position: absolute;
+}
+.checkout-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color:#FFFFFF;
+    padding: 10px;
+}
+
+.step {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+
+.badge {
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.step-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.step-divider {
+    position: relative;
+    height: 100%;
+    width: 2px;
+    background-color: #080101;
+    margin: 0 10px;
+}
+.a{
+    background-color: #00D26A;
+}
+.b{
+    background-color: #F09B0A;
+}
+.c{
+    background-color: #E0E0E0;
+}
+
+.a:after{
+    content: "";
+    display: flex;
+    width: 85px;
+    height: 1px;
+    background-color:#08B371;
+    position: absolute;
+    bottom: 50px; 
+    left: 135%;
+    transform: translateX(-50%); 
+}
+
+.b:after{
+    content: "";
+    display: flex;
+    width: 85px;
+    height: 1px;
+    background-color: rgb(151, 149, 149);
+    position: absolute;
+    bottom: 50px; 
+    left: 135%;
+    transform: translateX(-50%);
+}
+
+.date{
+    border-radius: 8px;
+    width: 80%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+}
+
+.date h2{
+    color: #FF5B00;
+    font-size: 16px;
+    padding:  5px 0px 0px 10px ;
+    margin: 0;
+}
+
+.Booking-information h3{
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.Booking-information h3::after{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 1em;
+    background-color: #FF5B00;
+    left: 0;
+}
+
+.Booking-card{
+    display: flex;
+    padding: 20px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.Booking-card img{
+    width: 20%;
+    border-radius: 5%;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.text h5{
+    margin: 3px 0 3px 10px;
+    font-size: 14px;
+}
+
+.text span{
+    margin: 3px 0px 3px 10px;
+    font-size: 12px;
+}
+
+.data{
+    margin: 10px 0 10px 10px;
+}
+
+.data span{
+    font-size: 14px;
+}
+
+.data .btn-primary {
+    background-color:white;
+    border: 1px solid #080101 ;
+    color: #080101;
+    border-radius:50% ;
+    line-height: 0.1em;
+    width: 1em;
+    height: 1em;
+    padding: 0;
+}
+
+.modal-body .title{
+    font-size: 11px;
+}
+
+.modal-body .data-day{
+    font-size: 11px;
+}
+
+.modal-body .text{
+    font-size: 11px;
+    position: relative;
+}
+
+.modal-body .text::after{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color:black;
+    left: -6px;
+    top: 5px;
+    border-radius: 50%;
+}
+
+.modal-content .OK{
+    width: 25%;
+    background-color:#EE5500;
+    font-size: 11px;
+    margin-left:180px;
+    margin-bottom: 10px;
+}
+
+.text-data{
+    margin-top: 15px;
+    font-size: 11px;
+    margin-bottom: -15px;
+}
+
+.text-data .icon{
+    color: #EE5500;
+    margin-left: 2px;
+}
+
+#myDatepicker{
+    border-radius: 5px;
+    width: 100px;
+    font-size: 11px;
+    padding: 3px;
+}
+
+
+.Contact-information{
+    margin-top: 30px;
+}
+
+.Contact-information h3{
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.Contact-information h3::after{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 1em;
+    background-color: #FF5B00;
+    left: 0;
+}
+
+.Contact-information .text{
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.Add-date{
+    background-color: white;
+    color: #EE5500;
+    border:1px solid #EE5500;
+    margin: 0px 0px 10px 20px;
+    font-size: 11px;
+}
+
+.modal-title{
+    font-size: 14px;
+}
+
+.modal-body{
+    width: 90%;
+    justify-content: space-between;
+}
+
+.modal-body .Name{
+    display: flex;
+}
+
+#Add-new-information span{
+    color: #EE5500;
+}
+
+#Add-new-information p{
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+#Add-new-information input{
+    margin-left: 5px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0 0 0 15px;
+}
+#Add-new-information .dropdown-toggle{
+    background-color: white;
+    color: #080101;
+    padding: 5px 5px;
+    font-size: 11px;
+}
+
+.dropdown-menu p{
+    padding-left:5px ;
+    font-size: 11px;
+}
+
+.dropdown-toggle{
+    width: 100%;
+}
+.first-name input,
+.list-name input{
+    width: 140px;
+}
+.phone-num input{
+    width: 250px;
+}
+.email input {
+    width: 285px;
+}
+.message{
+    font-size: 5px;
+}
+.canale{
+    background-color: white;
+    color: #080101;
+    border: 1px solid black;
+}
+
+.store{
+    background-color: #EE5500;
+    color: #FFFFFF;
+    border: none;
+}
+
+.modal-footer button{
+    width: 20%;
+    font-size: 11px;
+}
+
+.data-shows-that{
+    display: flex;
+    border: 1px solid rgb(214, 214, 214);
+    font-size: 11px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.data-shows-that p{
+    margin: 3px;
+}
+
+.data-show-text p{
+    color: #EE5500;
+}
+
+.upgrade h3{
+    margin:20px 0 ;
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.upgrade h3::after{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 1em;
+    background-color: #FF5B00;
+    left: 0;
+}
+
+.discount h3{
+    margin:20px 0 ;
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.discount h3::after{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 1em;
+    background-color: #FF5B00;
+    left: 0;
+}
+
+.discount-content{
+    margin:  3px 10px;
+}
+
+.interval{
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.accordion-collapse{
+    background-color: #F5F5F5;
+}
+
+.accordion-button{
+    padding: 0;
+}
+
+.accordion-header button{
+    font-size: 11px;
+}
+
+strong button{
+    background-color: #EE5500;
+    color: white;
+    margin-left: -5px;
+    border: 2px solid #EE5500;
+    border-radius: 0 5px 5px 0;
+    font-size: 11px;    
+}
+
+strong input{
+    font-size: 11px;
+}
+
+.Suitable button{
+    border: none;
+    margin: 8px 5px 0px 0px;
+    font-size: 11px;
+}
+
+.Suitable button:hover{
+    border-bottom: 1px solid #EE5500;
+}
+.Suitable hr{
+    margin-top: 0px;
+}
+
+.Suitable p{
+    font-size: 11px;
+}
+
+.accordion-button:hover{
+    background-color: white;
+}
+
+.terms{
+    font-size: 11px;
+    margin: 10px;
+}
+
+.Confirm-notification{
+    background-color: #FCF3DE;
+    width: 90%;
+    font-size: 11px;
+    border-radius: 5px;
+    margin: auto;
+    border: 1px solid #FCE6BC;
+    padding: 2px;
+}
+
+.Go-to-payment{
+    display: flex;
+    font-size: 10px;
+    margin: 10px 5px;
+}
+
+.Go-to-payment button{
+    background-color: #EE5500;
+    border-radius: 5px;
+    color: white;
+    border:  1px solid #EE5500;
+    margin: 5px 3px 5px 5px;
+}
+
+.price-detail{
+    background-color: white;
+    border-radius: 8px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    position: sticky;
+    bottom: 20px;
+    border: 1px solid #EE5500;
+}
+
+.price,
+.price-total{
+    display: flex;
+    font-size: 11px;
+    justify-content: space-between;
+}
+
+.total{
+    color: #EE5500;
+    font-size: 13px;
+}
+
+@media (min-width: 1200px) {
+    .Confirm-Order{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+
+    .a:after{
+        width: 870%;
+        left: 510%;
+    }
+
+    .b:after{
+        width: 870%;
+        left: 510%;
+    }
+
+    .date{
+        width: 60%;
+        margin-right: 0%;
+    }
+
+    .price-detail{
+        width: 10%;
+        margin-left: 1%;
+        bottom: 69%;
+    }
+    
+    .Booking-card img{
+        width: 10%;
+    }
+    .Booking-card .text{
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    .Confirm-notification{
+        width: 95%;
+    }
+    .Go-to-payment{
+        justify-content: space-between;
+        margin: 2% 2% ;
+    }
+    .Go-to-payment button{
+        width: 7%;
+    }
+    .modal-content .OK{
+        margin-left: 70%;
+    }
+        
+    
+}
