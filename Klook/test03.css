@@ -52,23 +52,23 @@
 .a:after{
     content: "";
     display: flex;
-    width: 85px;
+    width: 125%;
     height: 1px;
     background-color:#08B371;
     position: absolute;
-    bottom: 50px; 
-    left: 135%;
+    bottom: 70%; 
+    left: 138%;
     transform: translateX(-50%); 
 }
 
 .b:after{
     content: "";
     display: flex;
-    width: 85px;
+    width: 125%;
     height: 1px;
     background-color: rgb(151, 149, 149);
     position: absolute;
-    bottom: 50px; 
+    bottom: 70%; 
     left: 135%;
     transform: translateX(-50%);
 }
