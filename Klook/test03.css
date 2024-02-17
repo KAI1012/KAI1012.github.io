@@ -6,30 +6,48 @@
 .Confirm-Order{
     background-color: #F5F5F5;
     position: absolute;
+    width: 100%;
 }
 .checkout-nav {
     display: flex;
     justify-content: space-around;
     background-color:#FFFFFF;
-    padding: 10px;
+    padding: 2%;
+    width: 75%;
+    margin: auto;
+}
+.lineee{
+    background-color: #00D26A;
+    height: 1px;
+    width: 80%;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    margin-top: 5%;
 }
 
 .step {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 10px;
-    position: relative;
+    /* padding: 3%; */
+    box-sizing: border-box;
+    padding: 0;
+    /* position: relative; */
 }
 
 .badge {
-    padding: 5px;
-    border-radius: 50%;
-    margin-bottom: 5px;
+    border-radius: 100%;
+    display: block;
+    width: 100%;
+    /* margin-bottom: 25%; */
 }
 
 .step-text {
-    display: block;
-    margin-top: 5px;
+    /* display: inline; */
+    /* margin-top: 2%; */
     font-size: 12px;
+    /* flex-wrap: nowrap; */
+    /* width: 48px; */
 }
 
 /* .step-divider {
@@ -49,7 +67,7 @@
     background-color: #E0E0E0;
 }
 
-.a:after{
+/* .a:after{
     content: "";
     display: flex;
     width: 125%;
@@ -71,7 +89,7 @@
     bottom: 70%; 
     left: 135%;
     transform: translateX(-50%);
-}
+} */
 
 .date{
     border-radius: 8px;
@@ -467,7 +485,7 @@ strong input{
         margin: auto;
     }
 
-    .a:after{
+    /* .a:after{
         width: 670%;
         left: 415%;
     }
@@ -475,7 +493,7 @@ strong input{
     .b:after{
         width: 670%;
         left: 415%;
-    }
+    } */
 
     .date{
         width: 60%;
@@ -508,6 +526,35 @@ strong input{
     .modal-content .OK{
         margin-left: 70%;
     }
-        
     
+    .step-text{
+        font-size: 12px;
+    }
+    .lineee{
+        margin-top: 1%;
+    }
+}
+
+@media(max-width:1199px) { 
+    .lineee{
+        margin-top: 1%;
+    }
+}
+
+@media(max-width:920px) { 
+    .lineee{
+        margin-top: 1%;
+    }
+}
+
+@media(max-width:767px) { 
+    .lineee{
+        margin-top: 2%;
+    }
+}
+
+@media(max-width:500px) { 
+    .lineee{
+        margin-top: 3%;
+    }
 }
